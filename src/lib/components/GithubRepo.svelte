@@ -27,7 +27,7 @@
 	let avatar
 	/**@type {string}*/
 	let followers;
-
+	let why = false
 	onMount(async () => {
 		await fetch('https://api.github.com/users/ardasamedcelik').then((e) => {e.json().then((e) => {
 			username = e.login;
@@ -35,7 +35,7 @@
 			location = e.location;
 			avatar = e.avatar_url;
 			followers = e.followers;
-
+			why = true;
 			console.log('username', username);
 			console.log("deneme")
 		});
@@ -49,7 +49,8 @@
 			<div />
 		{/each}
 	{/if}
-
+    {#if why}
+	
 	<div class="mx-auto mt-32 px-4 py-4 flex  w-[900px] bg-[#0d1117af] rounded-lg shadow-lg">
 		<div class="items-center">
 			<img src={avatar} class="w-52 rounded-full" alt="aa">
@@ -85,4 +86,5 @@
 			</div>
 		</div>
 	</div>
+	{/if}
 </main>
