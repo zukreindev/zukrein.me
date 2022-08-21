@@ -7,9 +7,9 @@
 	let selected;
 </script>
 
-<div class="h-screen w-20 bg-[#12141d3b] flex flex-col fixed">
+<div class="h-screen w-20 bg-gradient-to-b from-[#12141d41] to-[#37427200]  flex flex-col fixed">
 	{#if selected === 1}
-		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all  cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z"
@@ -22,7 +22,7 @@
 			on:click={() => {
 				goto('');
 			}}
-			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all"
+			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all cursor-pointer"
 		>
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
@@ -31,7 +31,7 @@
 				/></svg
 			>
 		</div>
-		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M6.19 21.854a.75.75 0 0 1-1.188-.61V6.25a3.25 3.25 0 0 1 3.25-3.25h7.499A3.25 3.25 0 0 1 19 6.249v14.996a.75.75 0 0 1-1.188.609l-5.811-4.181-5.812 4.18Z"
@@ -40,7 +40,7 @@
 			>
 		</div>
 	{:else if selected === 2}
-		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg  hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg  hover:bg-[#0084f075] transition-all cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z"
@@ -53,7 +53,7 @@
 			on:click={() => {
 				goto('');
 			}}
-			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all"
+			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all cursor-pointer"
 		>
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
@@ -62,7 +62,7 @@
 				/></svg
 			>
 		</div>
-		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M6.19 21.854a.75.75 0 0 1-1.188-.61V6.25a3.25 3.25 0 0 1 3.25-3.25h7.499A3.25 3.25 0 0 1 19 6.249v14.996a.75.75 0 0 1-1.188.609l-5.811-4.181-5.812 4.18Z"
@@ -71,7 +71,7 @@
 			>
 		</div>
 	{:else if selected === 3}
-		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg  hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg  hover:bg-[#0084f075] transition-all cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z"
@@ -84,7 +84,7 @@
 			on:click={() => {
 				goto('');
 			}}
-			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all"
+			class="flex  justify-center mt-2 mx-auto p-3 rounded-lg hover:bg-[#0084f075] transition-all cursor-pointer"
 		>
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
@@ -93,7 +93,7 @@
 				/></svg
 			>
 		</div>
-		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all">
+		<div class="flex  justify-center mt-2 mx-auto p-3 rounded-lg bg-[#0072d2] hover:bg-[#0084f075] transition-all cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 				><path
 					d="M6.19 21.854a.75.75 0 0 1-1.188-.61V6.25a3.25 3.25 0 0 1 3.25-3.25h7.499A3.25 3.25 0 0 1 19 6.249v14.996a.75.75 0 0 1-1.188.609l-5.811-4.181-5.812 4.18Z"

@@ -1,9 +1,9 @@
 <script>
 </script>
 
-<main class="w-screen flex flex-col items-center justify-center mt-20 mb-20">
+<main class="w-screen flex flex-col items-center justify-center mt-20 mb-20 ">
 	<div
-		class=" bg-gradient-to-br from-[#5662f6] to-blue-700 p-4 rounded-md text-white flex flex-col lg:flex-row items-center w-[1100px]"
+		class=" bg-gradient-to-br from-[#5662f6] to-blue-700 p-2 rounded-md text-white flex flex-col lg:flex-row items-center w-[900px]"
 	>
 		<div class="flex-shrink-0 w-20 pl-0  lg:pl-2 mb-4 lg:mb-0">
 			<svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="#ffffff" height="50px" class="text-white" viewBox="0 0 640 512"
@@ -15,12 +15,12 @@
 		<div>
 			<h6 class="text-xl mb-1">You can contact me on via <strong class="font-semibold">Discord</strong></h6>
 			<p>zukrein'xd #1307</p>
-			<a href="#a" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-4">Contact Me</a>
+			<a href="https://discord.com/users/888795101843820564"  target="_blank" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-3 cursor-pointer">Contact Me</a>
 		</div>
 	</div>
 
 	<div
-		class=" mt-16 bg-gradient-to-tr from-[#d62976] to-[#d4ad41] p-4 rounded-md text-white flex flex-col lg:flex-row items-center w-[1100px]"
+		class=" mt-16 bg-gradient-to-tr from-[#d62976] to-[#d4ad41] p-2 rounded-md text-white flex flex-col lg:flex-row items-center w-[900px]"
 	>
 		<div class="flex-shrink-0 w-20 pl-0 lg:pl-2 mb-4 lg:mb-0">
 			<svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="#ffffff" height="50px" viewBox="0 0 448 512"
@@ -32,9 +32,9 @@
 		<div>
 			<h6 class="text-xl mb-1">You can Follow me on via <strong class="font-semibold">Instagram</strong></h6>
 			<p>@ardasamedcelik</p>
-			<a href="#a" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-4">Follow me</a>
+			<a href="https://instagram.com/ardasamedcelik" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-3 cursor-pointer">Follow me</a>
 		</div>
-	</div>
+	</div> 
 </main>
 
 <style>

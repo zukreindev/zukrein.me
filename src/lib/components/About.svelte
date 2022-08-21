@@ -39,7 +39,7 @@
 	});
 </script>
 
-<main class="ml-20">
+<main class="">
 	<div class="md:flex px-auto md:mx-36 py-20 md:py-56 text-white items-center justify-between">
 		<div class="">
 			<img src={discordpp} class="w-52 rounded-full" alt="" />

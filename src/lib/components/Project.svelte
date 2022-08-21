@@ -33,9 +33,9 @@
 	];
 </script>
 
-<main class="ml-20">
+<main class="ml-12">
 	<h2 class="text-gray-200 text-4xl ml-10 font-semibold">My Projects</h2>
-	<div class="mt-10 grid gap-10 grid-cols-3 ml-3 w-screen mx-auto">
+	<div class="mt-10 grid gap-10 grid-cols-3 ml-3 w-full mx-auto">
 		{#each projects as project}
 			<div class="w-[300px]   rounded-lg border   transition-all bg-[#242946ef] border-gray-800 shadow-md hover:shadow-lg">
 				<a href="#c">

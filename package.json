@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"gsap": "^3.11.0"
+		"gsap": "^3.11.0",
+		"lodash": "^4.17.21"
 	}
 }

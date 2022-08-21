@@ -3,7 +3,10 @@
 	import About from '$lib/components/About.svelte';
 	import Project from '$lib/components/Project.svelte';
 	import Social from '$lib/components/Social.svelte';
-		let selectednum = 2;
+	import GithubRepo from '$lib/components/GithubRepo.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+
+		let selectednum = 0;
 
 	/**
 	 * @type {number}
@@ -11,8 +14,8 @@
 	let y_eksen;
 	let tag = 'div';
 </script>
-
 <main class="flex h-[9050px]">
+	
 	<!--Sidebar-->
 	<div>
 		{#if y_eksen > 500}
@@ -25,8 +28,10 @@
 	</div>
 	<!--Main Content-->
 	<div class=" py-3">
+		<Navbar />
 		<About />
 		<Project />
+		<GithubRepo />
 		<Social />
 		
 	</div>
