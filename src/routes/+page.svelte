@@ -18,16 +18,16 @@
 	
 	<!--Sidebar-->
 	<div>
-		{#if y_eksen > 500}
-			<Sidebar selected={2} />
-		{:else if y_eksen > 200}
+		{#if y_eksen > 1300}
 			<Sidebar selected={3} />
+		{:else if y_eksen > 600}
+			<Sidebar selected={2} />
 		{:else}
 			<Sidebar selected={1} />
 		{/if}
 	</div>
 	<!--Main Content-->
-	<div class=" py-3">
+	<div class="py-3 ml-20">
 		<Navbar />
 		<About />
 		<Project />

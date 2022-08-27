@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<main class="w-screen flex flex-col items-center justify-center mt-20 mb-20 ">
+<main class="w-full flex flex-col items-center justify-center my-20">
 	<div
 		class=" bg-gradient-to-br from-[#5662f6] to-blue-700 p-2 rounded-md text-white flex flex-col lg:flex-row items-center w-[900px]"
 	>
@@ -32,7 +32,7 @@
 		<div>
 			<h6 class="text-xl mb-1">You can Follow me on via <strong class="font-semibold">Instagram</strong></h6>
 			<p>@ardasamedcelik</p>
-			<a href="https://instagram.com/ardasamedcelik" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-3 cursor-pointer">Follow me</a>
+			<a href="https://instagram.com/ardasamedcelik" target="_blank" class="bg-white h-9 px-4 inline-flex items-center rounded text-black mt-3 cursor-pointer">Follow me</a>
 		</div>
 	</div> 
 </main>

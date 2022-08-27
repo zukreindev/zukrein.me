@@ -18,73 +18,112 @@
 
 	//Github User Info
 	/**@type {string}*/
-	let username
+	let username;
 	/**@type {string}*/
 	let description;
 	/**@type {string}*/
 	let location;
 	/**@type {string}*/
-	let avatar
+	let avatar;
 	/**@type {string}*/
 	let followers;
-	let why = false
+	let why = false;
 	onMount(async () => {
-		await fetch('https://api.github.com/users/ardasamedcelik').then((e) => {e.json().then((e) => {
-			username = e.login;
-			description = e.bio;
-			location = e.location;
-			avatar = e.avatar_url;
-			followers = e.followers;
-			why = true;
-			console.log('username', username);
-			console.log("deneme")
+		await fetch('https://api.github.com/users/ardasamedcelik').then((e) => {
+			e.json().then((e) => {
+				username = e.login;
+				description = e.bio;
+				location = e.location;
+				avatar = e.avatar_url;
+				followers = e.followers;
+				why = true;
+				console.log('username', username);
+				console.log('deneme');
+			});
 		});
 	});
-	});
+
+	import FaStar from 'svelte-icons/fa/FaStar.svelte';
+	import IoMdTv from 'svelte-icons/io/IoMdTv.svelte'
 </script>
 
 <main>
-	{#if wyh}
-		{#each githubrepo as deneme}
-			<div />
-		{/each}
-	{/if}
-    {#if why}
-	
-	<div class="mx-auto mt-32 px-4 py-4 flex  w-[900px] bg-[#0d1117af] rounded-lg shadow-lg">
-		<div class="items-center">
-			<img src={avatar} class="w-52 rounded-full" alt="aa">
-			<p class="text-white font-bold text-2xl my-2">{username}</p>
-			<p class="text-gray-300 text-[12px] py-3 px-2 w-56">{description}</p>
-			<div class="my-2 mr-4 flex flex-col ">
-				<button type="button" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
-					Followers: {followers}
-				  </button>
-				  
-				<button type="button" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
-					Follow: {followers}
-				  </button>
-				  
-				<button type="button" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
-					Location: {followers}
-				  </button>
-			</div>
-		</div>
+	{#if why}
+		<div class="mx-auto mt-32 px-4 py-4 flex  w-[1000px] bg-[#0d1117af] rounded-lg shadow-lg">
+			<div class="items-center">
+				<img src={avatar} class="w-52 rounded-full" alt="aa" />
+				<p class="text-white font-bold text-2xl my-2">{username}</p>
+				<p class="text-gray-300 text-[12px] py-3 px-2 w-56">{description}</p>
+				<div class="my-2 mr-4 flex flex-col ">
+					<button
+						type="button"
+						class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
+					>
+						Followers: {followers}
+					</button>
 
-		<div>
-			<!--Company ve repolar-->
+					<button
+						type="button"
+						class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
+					>
+						Follow: {followers}
+					</button>
+
+					<button
+						type="button"
+						class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
+					>
+						Location: {followers}
+					</button>
+				</div>
+			</div>
+
 			<div>
-				<h2 class="text-white font-bold text-xl py-3">Company</h2>
-				<div class="flex">
-					<div class="h-24 w-40 bg-gray-800 rounded-md mx-3 my-3">
-						
-					</div>
-					<div class="h-24 w-40 bg-gray-800 rounded-md mx-3 my-3">
-							
+				<!--Company ve repolar-->
+				<div>
+					<h2 class="text-white font-bold text-xl py-3">Repositories</h2>
+					<div class="grid grid-cols-3 gap-7">
+						{#if wyh}
+							{#each githubrepo as repo}
+								<a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+									<div class=" w-52 bg-gray-800 rounded-md mx-3 my-2 p-1">
+										<h3 class="text-[14px] text-white font-bold">{repo.name}</h3>
+
+										<div class="flex items-center">
+											<div class="flex items-center mr-2">
+												<div class="star mr-1">
+													<FaStar />
+												</div>
+												<h2 class="text-white text-[12px] flex my-1">{repo.watchers_count}</h2>
+											</div>
+											<div class="flex items-center">
+												<div class="tv mr-1">
+													<IoMdTv />
+												</div>
+												<h2 class="text-white text-[12px] flex mb-1">{repo.watchers_count}</h2>
+											</div>
+										</div>
+										<h2 class="text-gray-300 text-[10px] font-medium">{repo.language}</h2>
+									</div>
+								</a>
+							{/each}
+						{/if}
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	{/if}
 </main>
+
+<style>
+	.star {
+		color: #ffc107;
+		width: 12px;
+		height: 12px;
+	}
+	.tv {
+		color: #ffffff;
+		width: 12px;
+		height: 12px;
+	}
+</style>
