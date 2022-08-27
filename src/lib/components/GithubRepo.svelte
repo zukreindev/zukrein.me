@@ -86,7 +86,7 @@
 						{#if wyh}
 							{#each githubrepo as repo}
 								<a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-									<div class=" w-52 bg-gray-800 rounded-md mx-3 my-2 p-1">
+									<div class=" w-52 bg-gray-800 rounded-md mx-3 my-2 p-1 pl-3">
 										<h3 class="text-[14px] text-white font-bold">{repo.name}</h3>
 
 										<div class="flex items-center">

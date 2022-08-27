@@ -3,7 +3,7 @@
 	let projects = [
 		{
 			name: 'VeivBotlist',
-			photo: '/src/lib/media/veivbotlist.png',
+			photo: {veiversa},
 			description: 'VeivBotlist is a website that helps you to find the best bot for your server.',
 			link: 'https://zukrein-me.vercel.app'
 		},
