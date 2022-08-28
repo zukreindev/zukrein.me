@@ -43,9 +43,9 @@
 </script>
 
 <main class="">
-	<div class="md:flex px-auto md:mx-36 py-20 md:py-56 text-white items-center justify-between">
+	<div class="md:flex items-center py-40 px-52 justify-center space-x-24">
 		<div class="">
-			<img src={discordpp} class="w-52 rounded-full ring-4  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
+			<img src={discordpp} class="w-[250px] rounded-full ring-4  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
 		</div>
 		<div class="text-xl pt-7 flex-row text-center md:text-left md:pl-6 mx-6">
 			<h3 class="text-2xl font-medium pb-4 md:pb-3 text-white ">Hello World 😺</h3>

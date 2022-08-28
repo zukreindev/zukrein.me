@@ -29,7 +29,7 @@
 </script>
 
 <main class="ml-12">
-	<h2 class="text-gray-200 text-4xl ml-10 font-semibold">My Projects</h2>
+	<h2 class="text-gray-200 text-4xl  font-semibold">My Projects</h2>
 	<div class="mt-10 grid gap-10 grid-cols-3 w-full">
 		{#each projects as project}
 			<div

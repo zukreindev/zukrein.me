@@ -2,7 +2,6 @@
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import About from '$lib/components/About.svelte';
 	import Project from '$lib/components/Project.svelte';
-	import Social from '$lib/components/Social.svelte';
 	import GithubRepo from '$lib/components/GithubRepo.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -27,12 +26,11 @@
 		{/if}
 	</div>
 	<!--Main Content-->
-	<div class="py-3 ml-20 w-full">
+	<div class="py-3 lg:ml-20 w-full">
 		<Navbar />
 		<About />
 		<Project />
 		<GithubRepo />
-		<Social />
 		<Footer />
 		
 	</div>

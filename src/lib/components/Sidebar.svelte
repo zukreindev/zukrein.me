@@ -7,7 +7,7 @@
 	let selected;
 </script>
 
-<div class="h-screen w-20 bg-gradient-to-b from-[#12141d41] to-[#37427200]  flex flex-col fixed">
+<div class="hidden  h-screen w-16 bg-gradient-to-b from-[#12141d41] to-[#37427200] lg:flex flex-col fixed">
 	{#if selected === 1}
 		<div class="flex  justify-center mt-10 mx-auto p-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all  cursor-pointer">
 			<svg width="34" height="34" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
