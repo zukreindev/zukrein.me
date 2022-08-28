@@ -24,16 +24,28 @@
 			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
-		}
+		},
+		{
+			name: 'ZuksPost',
+			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			description: 'funny video app',
+			link: 'https://zukrein-me.vercel.app'
+		},
+		{
+			name: 'ZuksPost',
+			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			description: 'funny video app',
+			link: 'https://zukrein-me.vercel.app'
+		},
 	];
 </script>
 
-<main class="ml-12">
-	<h2 class="text-gray-200 text-4xl  font-semibold">My Projects</h2>
-	<div class="mt-10 grid gap-10 grid-cols-3 w-full">
+<main class="container">
+	<h2 class="text-gray-200 text-4xl font-semibold">My Projects</h2>
+	<div class="space-x-10 py-10 flex overflow-x-scroll">
 		{#each projects as project}
 			<div
-				class="w-[300px]    rounded-lg   transition-all bg-[#242946ef] bg- bg-cover bg-center  shadow-md hover:shadow-lg"
+				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg- bg-cover bg-center  shadow-md hover:shadow-lg"
 				style="background-image: url({project.photo});"
 			>
 				<div class="px-3 py-4 m-3 rounded-lg bg-[#242b51d5] flex flex-col justify-between">

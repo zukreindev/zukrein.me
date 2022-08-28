@@ -26,7 +26,7 @@
 		{/if}
 	</div>
 	<!--Main Content-->
-	<div class="py-3 lg:ml-20 w-full">
+	<div class="">
 		<Navbar />
 		<About />
 		<Project />
