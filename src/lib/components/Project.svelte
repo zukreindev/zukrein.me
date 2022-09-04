@@ -40,7 +40,7 @@
 	];
 </script>
 
-<main class="container">
+<main class="container py-8 mb-52" id="project">
 	<h2 class="text-gray-200 text-4xl font-semibold">My Projects</h2>
 	<div class="space-x-10 py-10 flex overflow-x-scroll">
 		{#each projects as project}

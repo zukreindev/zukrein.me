@@ -1,39 +1,20 @@
 <script>
-	import Sidebar from '$lib/components/Sidebar.svelte';
 	import About from '$lib/components/About.svelte';
 	import Project from '$lib/components/Project.svelte';
 	import GithubRepo from '$lib/components/GithubRepo.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-		let selectednum = 0;
+	import Communities from '$lib/components/Communities.svelte';
+	import GoHome from '$lib/components/GoHome.svelte';
 
-	/**
-	 * @type {number}
-	 */
-	let y_eksen;
-	let tag = 'div';
 </script>
-<main class="flex ">
-	
-	<!--Sidebar-->
-	<div>
-		{#if y_eksen > 1300}
-			<Sidebar selected={3} />
-		{:else if y_eksen > 600}
-			<Sidebar selected={2} />
-		{:else}
-			<Sidebar selected={1} />
-		{/if}
-	</div>
-	<!--Main Content-->
-	<div class="">
-		<Navbar />
-		<About />
-		<Project />
-		<GithubRepo />
-		<Footer />
-		
-	</div>
-</main>
 
-<svelte:window bind:scrollY={y_eksen} />
+<main class="bg-gradient-to-r from-[#1a1d29] to-[#191c24]">
+	<Navbar />
+	<About />
+	<Project />
+	<Communities />
+	<GithubRepo />
+	<Footer />
+	<GoHome />
+</main>

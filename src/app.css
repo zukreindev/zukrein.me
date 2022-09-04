@@ -62,3 +62,6 @@
 body {
 	overflow-x: block;
 }
+html{
+	scroll-behavior: smooth;
+}

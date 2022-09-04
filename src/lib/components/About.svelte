@@ -43,13 +43,13 @@
 </script>
 
 <main class="">
-	<div class="md:flex items-center py-40 px-52 w-full justify-center lg:space-x-20">
+	<div class="md:flex items-center py-52 px-64 w-full justify-center lg:space-x-32">
 		<div class="">
-			<img src={discordpp} class="w-[250px] mx-auto rounded-full ring-4  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
+			<img src={discordpp} class="w-[300px] mx-auto rounded-full ring-4  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
 		</div>
-		<div class="text-xl pt-7 flex-row text-center md:text-left md:pl-6 mx-6">
-			<h3 class="text-2xl font-medium pb-4 w-[250px] md:pb-3 text-white ">Hello World 😺</h3>
-			<p class="text-gray-200 font-medium w-[250px] items-center">
+		<div class="items-center flex flex-col mx-auto justify-center">
+			<h3 class="text-4xl font-medium pb-4 w-[250px] md:pb-3 text-gray-50 ">Hello World 😺</h3>
+			<p class="text-gray-300 text-md font-medium w-[250px] items-center">
 				Hello, I'm Zukrein! I'm 16 years old, I'm a full-stack developer. I living in Turkey
 			</p>
 		</div>
