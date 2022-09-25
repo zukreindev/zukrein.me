@@ -14,7 +14,6 @@
 	<About />
 	<Project />
 	<Communities />
-	<GithubRepo />
 	<Footer />
 	<GoHome />
 </main>

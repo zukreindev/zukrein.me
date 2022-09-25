@@ -28,28 +28,20 @@
 					? `https://cdn.discordapp.com/avatars/888795101843820564/${discordpp}.${discordpp.startsWith('a_') ? 'gif' : 'png'}`
 					: 'https://cdn.discordapp.com/embed/avatars/1.png';
 
-				if (discordstatus == 'online') {
-					discordpresence = '📱 Online';
-				} else if (discordstatus == 'idle') {
-					discordpresence = '🌙 Idle';
-				} else if (discordstatus == 'dnd') {
-					discordpresence = '🔴 Do Not Disturb';
-				} else if (discordstatus == 'offline') {
-					discordpresence = 'ring-gray-500';
-				}
+				
 			});
 		});
 	});
 </script>
 
 <main class="">
-	<div class="md:flex items-center py-52 px-64 w-full justify-center lg:space-x-32">
+	<div class="lg:flex items-center lg:py-52 lg:px-64 w-full justify-evenly ">
 		<div class="">
-			<img src={discordpp} class="w-[300px] mx-auto rounded-full ring-4  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
+			<img src={discordpp} class="lg:w-72 md:w-60 w-52  mx-auto rounded-full ring-2  {discordstatus === 'dnd' ? 'ring-red-500' : ''} {discordstatus === 'offline' ? 'ring-gray-500' : ''} {discordstatus === 'online' ? 'ring-green-500' : ''} {discordstatus === 'idle' ? 'ring-yellow-500' : ''}"  alt=""/>
 		</div>
-		<div class="items-center flex flex-col mx-auto justify-center">
-			<h3 class="text-4xl font-medium pb-4 w-[250px] md:pb-3 text-gray-50 ">Hello World 😺</h3>
-			<p class="text-gray-300 text-md font-medium w-[250px] items-center">
+		<div class="flex flex-col items-center justify-center">
+			<h3 class="text-4xl font-medium pb-4 w-64 lg:pb-3 text-gray-50 ">Hello World 😺</h3>
+			<p class="text-gray-400 text-lg font-medium w-64 items-center">
 				Hello, I'm Zukrein! I'm 16 years old, I'm a full-stack developer. I living in Turkey
 			</p>
 		</div>
