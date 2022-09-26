@@ -7,7 +7,7 @@
 		<div>
 			<span class="text-md text-gray-200">© 2022 Zukrein </span>
 		</div>
-		<div class="space-x-6 flex text-[#3b82f6] transition-all text-md">
+		<div class="space-x-6 flex text-gray-200 hover:text-[#3b82f6] transition-all text-md">
 			<a href="http://instagram.com/ardasamedcelik" target="_blank" rel="noopener noreferrer"><h2>Instagram</h2></a>
 			<a href="https://discord.com/users/888795101843820564" target="_blank" rel="noopener noreferrer"><h2>Discord</h2></a>
 			<a href="http://github.com/ardasamedcelik" target="_blank" rel="noopener noreferrer"><h2>GitHub</h2></a>
