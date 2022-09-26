@@ -1,17 +1,20 @@
 <script>
-	// @ts-nocheck
-
 	import { goto } from '$app/navigation';
+
 	const clickProject = () => {
 		goto('#project');
 	};
+
 	const clickGithub = () => {
 		goto('https://github.com/ardasamedcelik');
 	};
+
 	const clickCommunities = () => {
 		goto('#communities');
 	};
+
 	let clicked = false;
+
 	const clickHandle = () => {
 		clicked = !clicked;
 
@@ -50,19 +53,27 @@
 		</div>
 	</div>
 	<div class="{clicked == true ? 'block' : 'hidden'} w-full h-full fixed top-0 bg-gray-900 bg-opacity-80">
-		
 		<div class="w-full h-full flex flex-col items-center justify-around">
-			<div class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all" on:click={clickProject}>
+			<div
+				class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all"
+				on:click={clickProject}
+			>
 				<p>Projects</p>
 			</div>
-			<div class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all" on:click={clickCommunities}>
+			<div
+				class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all"
+				on:click={clickCommunities}
+			>
 				<p>Communities</p>
 			</div>
-			<div class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all" on:click={clickGithub}>
+			<div
+				class="text-2xl text-gray-200 font-semibold hover:bg-blue-600 px-40 py-3 rounded-lg transition-all"
+				on:click={clickGithub}
+			>
 				<p>GitHub</p>
 			</div>
-		</div>		
-		
+		</div>
+
 		<div class="absolute top-4 right-5 fill-white" on:click={clickHandle}>
 			<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 320 512"
 				><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path

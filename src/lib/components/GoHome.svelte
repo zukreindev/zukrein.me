@@ -1,21 +1,20 @@
 <script>
-    import jquery from 'jquery';
-    
+	import jquery from 'jquery';
 
-jquery(document).ready(function () {
- jquery(window).scroll(function(){
-   var scroll = jquery(window).scrollTop();
-   if(scroll > 100){
-    jquery("#goHome").fadeIn();
-   }else{
-     jquery("#goHome").fadeOut();
-   }
- });
-  
-});
-    const clickHandle = () => {
-        jquery('html, body').animate({scrollTop:0}, '300');
-    }
+	jquery(document).ready(function () {
+		jquery(window).scroll(function () {
+			var scroll = jquery(window).scrollTop();
+			if (scroll > 100) {
+				jquery('#goHome').fadeIn();
+			} else {
+				jquery('#goHome').fadeOut();
+			}
+		});
+	});
+
+	const clickHandle = () => {
+		jquery('html, body').animate({ scrollTop: 0 }, '300');
+	};
 </script>
 
 <main on:click={clickHandle} class="fixed right-5 bottom-5 hidden" id="goHome">
