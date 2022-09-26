@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<div class="h-14 flex justify-between  items-center mx-5 lg:mx-10 ">
+	<div class="h-16 flex justify-between items-center mx-5 lg:mx-10 ">
 		<h1 class="font-bold text-gray-200 hover:text-gray-300 cursor-pointer text-2xl">Zukrein</h1>
 		<div class="hidden sm:block">
 			<button
