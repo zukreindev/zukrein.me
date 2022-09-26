@@ -1,43 +1,37 @@
 <script>
 	import veiversa from '$lib/media/veiversa.png';
-	
+
 	let projects = [
 		{
 			name: 'VeivBotlist',
-			photo: veiversa,
 			description: 'VeivBotlist is a website that helps you to find the best bot for your server.',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'Vapp',
-			photo: veiversa,
 			description: 'real-time messaging platform',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'EraxDB',
-			photo: veiversa,
 			description: 'Nodejs database handler (oç emirhan kodladı)',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
-		},
+		}
 	];
 </script>
 
@@ -47,7 +41,6 @@
 		{#each projects as project}
 			<div
 				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg-cover bg-center shadow-md hover:shadow-lg"
-				style="background-image: url({project.photo});"
 			>
 				<div class="px-3 py-4 m-3 rounded-lg bg-[#242b51d5] flex flex-col justify-between">
 					<div>
@@ -55,7 +48,6 @@
 							<h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">{project.name}</h5>
 						</a>
 						<p class="mb-3 h-11 font-normal text-gray-400">{project.description}</p>
-	
 					</div>
 					<a
 						href="#w"
