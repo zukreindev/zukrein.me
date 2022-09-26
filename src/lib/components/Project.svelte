@@ -1,39 +1,40 @@
 <script>
 	import veiversa from '$lib/media/veiversa.png';
+	
 	let projects = [
 		{
 			name: 'VeivBotlist',
-			photo: {veiversa},
+			photo: veiversa,
 			description: 'VeivBotlist is a website that helps you to find the best bot for your server.',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'Vapp',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			photo: veiversa,
 			description: 'real-time messaging platform',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'EraxDB',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			photo: veiversa,
 			description: 'Nodejs database handler (oç emirhan kodladı)',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
+			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
