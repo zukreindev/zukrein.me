@@ -16,7 +16,7 @@
 
 <main
 	on:click={() => {
-		jquery('html, body').animate({ scrollTop: 0 }, 100);
+		jquery('html, body').animate({ scrollTop: 0 }, 0);
 	}}
 	class="fixed right-5 bottom-5 hidden"
 	id="goHome"
