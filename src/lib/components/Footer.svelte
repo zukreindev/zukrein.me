@@ -3,7 +3,7 @@
 </script>
 
 <main>
-	<div class="flex justify-around p-4  sm:p-6 ">
+	<div class="flex justify-around p-4  sm:p-6 mt-12">
 		<div>
 			<span class="text-md text-gray-200">© 2022 Zukrein </span>
 		</div>

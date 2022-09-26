@@ -24,10 +24,10 @@
 	<div class="flex flex-col items-center space-y-10">
 		{#each communities as community}
 			<a href={community.website} target="_blank" class="w-full">
-				<div class="bg-[#10151cac] hover:bg-[#10151cc9] transition-all rounded-lg w-full flex p-2 shadow-lg">
-					<img src={community.image} class="rounded-xl " alt="" />
+				<div class="bg-[#10151cac] hover:bg-[#10151cc9] transition-all rounded-lg w-full md:flex p-2 shadow-lg">
+					<img src={community.image} class="rounded-xl hidden md:block" alt="" />
 					<div class="pl-5 pr-2">
-						<h3 class="text-gray-200 text-xl font-bold py-1">{community.name}</h3>
+						<h3 class="text-gray-200 text-xl font-bold py-1 ">{community.name}</h3>
 						<p class="text-gray-400">{community.description}</p>
 						<p class="py-2 text-gray-300">👥 {community.members_length}</p>
 					</div>
