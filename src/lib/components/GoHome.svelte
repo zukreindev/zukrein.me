@@ -3,21 +3,24 @@
 
 	jquery(document).ready(function () {
 		jquery(window).scroll(function () {
-			var scroll = jquery(window).scrollTop();
+			const scroll = jquery(window).scrollTop();
+
 			if (scroll > 100) {
-				jquery('#goHome').fadeIn();
+				jquery('#goHome').fadeIn(200);
 			} else {
-				jquery('#goHome').fadeOut();
+				jquery('#goHome').fadeOut(200);
 			}
 		});
 	});
-
-	const clickHandle = () => {
-		jquery('html, body').animate({ scrollTop: 0 }, '300');
-	};
 </script>
 
-<main on:click={clickHandle} class="fixed right-5 bottom-5 hidden" id="goHome">
+<main
+	on:click={() => {
+		jquery('html, body').animate({ scrollTop: 0 });
+	}}
+	class="fixed right-5 bottom-5 hidden"
+	id="goHome"
+>
 	<div class="h-10 w-10 bg-gray-800 flex items-center justify-center rounded-lg shadow-lg cursor-pointer">
 		<svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 			><path

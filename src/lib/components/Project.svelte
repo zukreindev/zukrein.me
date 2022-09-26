@@ -1,6 +1,6 @@
 <script>
 	import veiversa from '$lib/media/veiversa.png';
-
+	
 	let projects = [
 		{
 			name: 'VeivBotlist',
@@ -37,7 +37,7 @@
 			photo: veiversa,
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
-		}
+		},
 	];
 </script>
 
@@ -55,6 +55,7 @@
 							<h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">{project.name}</h5>
 						</a>
 						<p class="mb-3 h-11 font-normal text-gray-400">{project.description}</p>
+	
 					</div>
 					<a
 						href="#w"
