@@ -1,42 +1,37 @@
 <script>
 	import veiversa from '$lib/media/veiversa.png';
+
 	let projects = [
 		{
 			name: 'VeivBotlist',
-			photo: {veiversa},
 			description: 'VeivBotlist is a website that helps you to find the best bot for your server.',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'Vapp',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'real-time messaging platform',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'EraxDB',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'Nodejs database handler (oç emirhan kodladı)',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
 		},
 		{
 			name: 'ZuksPost',
-			photo: 'https://img.myloview.com/stickers/z-logo-design-icon-vector-symbol-700-194355775.jpg',
 			description: 'funny video app',
 			link: 'https://zukrein-me.vercel.app'
-		},
+		}
 	];
 </script>
 
@@ -45,8 +40,7 @@
 	<div class="space-x-10 py-10 flex overflow-x-scroll">
 		{#each projects as project}
 			<div
-				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg- bg-cover bg-center  shadow-md hover:shadow-lg"
-				style="background-image: url({project.photo});"
+				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg-cover bg-center shadow-md hover:shadow-lg"
 			>
 				<div class="px-3 py-4 m-3 rounded-lg bg-[#242b51d5] flex flex-col justify-between">
 					<div>
@@ -54,11 +48,10 @@
 							<h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">{project.name}</h5>
 						</a>
 						<p class="mb-3 h-11 font-normal text-gray-400">{project.description}</p>
-	
 					</div>
 					<a
 						href="#w"
-						class="inline-flex items-center py-2 mr-auto px-3 text-sm font-medium text-center text-white  rounded-lg  focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+						class="inline-flex items-center py-2 mr-auto px-3 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 transition-all"
 					>
 						Read more
 						<svg

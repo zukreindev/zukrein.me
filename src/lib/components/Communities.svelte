@@ -24,7 +24,7 @@
 	<div class="flex flex-col items-center space-y-10">
 		{#each communities as community}
 			<a href={community.website} target="_blank" class="w-full">
-				<div class="bg-[#10151cac] hover:bg-[#10151cc9] transition-all rounded-lg w-full md:flex p-2 shadow-lg">
+				<div class="bg-[#10151cac] hover:bg-[#0f141c] transition-all rounded-lg w-full md:flex p-2 shadow-lg">
 					<img src={community.image} class="rounded-xl hidden md:block" alt="" />
 					<div class="pl-5 pr-2">
 						<h3 class="text-gray-200 text-xl font-bold py-1 ">{community.name}</h3>
