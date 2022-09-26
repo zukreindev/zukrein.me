@@ -45,7 +45,7 @@
 	<div class="space-x-10 py-10 flex overflow-x-scroll">
 		{#each projects as project}
 			<div
-				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg- bg-cover bg-center  shadow-md hover:shadow-lg"
+				class="w-[250px] mx-auto rounded-lg shrink-0 grow-0 transition-all bg-[#242946ef] bg-cover bg-center shadow-md hover:shadow-lg"
 				style="background-image: url({project.photo});"
 			>
 				<div class="px-3 py-4 m-3 rounded-lg bg-[#242b51d5] flex flex-col justify-between">
@@ -58,7 +58,7 @@
 					</div>
 					<a
 						href="#w"
-						class="inline-flex items-center py-2 mr-auto px-3 text-sm font-medium text-center text-white  rounded-lg  focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+						class="inline-flex items-center py-2 mr-auto px-3 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800 transition-all"
 					>
 						Read more
 						<svg
